@@ -1,17 +1,19 @@
-####  ###########################
+##############################
 #' A Euclidean Distance Finder
 #'
 #' This algorithm uses the Gram matrix to calculate
 #' the pairwise Euclidean distance between the N
-#' elements of data.mat
+#' elements of data.mat. In this case, it will often
+#' be used as a dissimilarity matrix.
 #'
 #' @param data.mat - An N x p matrix of data.
-#' @param digits - number of significant digits to return.
+#' @param digits - The number of significant digits to return.
 #'
 #' @return distance.mat - An N x N pairwise distance matrix.
 #' @export
 #'
 #' @examples
+#' DIST(as.matrix(iris[,1:4]))
 DIST <- function(data.mat, digits = 15) {
   ### Calculate Euclidean distance using the Gram matrix ###
   Gram.mat <- as.matrix(data.mat) %*% t(as.matrix(data.mat))

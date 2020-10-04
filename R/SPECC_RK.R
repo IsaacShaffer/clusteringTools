@@ -1,3 +1,17 @@
+#' Spectral Clustering using a Radial Kernel
+#'
+#'
+#'
+#' @param data.mat - An N x p data matrix.
+#' @param centers - The number of cluster centers returned.
+#' @param scale - A scale factor for the radial kernel function.
+#'
+#' @return kmeans output - TODO update this
+#' @export
+#'
+#' @examples
+#' iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))), 3)
+#' mclust::adjustedRandIndex(iris_demo$cluster, iris[,5])
 SPECC_RK <- function(data.mat, centers, scale = 1) {
   require("data.table")
   N <- nrow(data.mat)
