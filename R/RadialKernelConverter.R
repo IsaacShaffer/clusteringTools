@@ -4,13 +4,13 @@
 #' similarity matrix for spectral analysis.
 #'
 #' @param euclidian_distance.mat
-#' @param c
+#' @param c - A scale factor
 #'
 #' @return RMG.mat
 #' @export
 #'
 #' @examples
-#' RADIAL_KERNEL(dist(iris[,1:4]))
+#' RADIAL_KERNEL(as.matrix(DIST(iris[,1:4])))
 RADIAL_KERNEL <- function(euclidian_distance.mat, c = 1) {
 
   stopifnot(dim(euclidian_distance.mat)[1]==dim(euclidian_distance.mat)[2])
