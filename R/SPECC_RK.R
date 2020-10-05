@@ -33,6 +33,7 @@ SPECC_RK <- function(data.mat, centers, scale = 1) {
 }
 #'
 #' @examples
-#' iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))), 3)
-#' # pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
+#' iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))), 3, 70)
+#'
+#' pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
 
