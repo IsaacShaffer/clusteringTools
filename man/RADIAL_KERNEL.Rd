@@ -7,7 +7,13 @@
 RADIAL_KERNEL(euclidian_distance.mat, c = 1)
 }
 \arguments{
-\item{c}{}
+\item{euclidian_distance.mat}{\itemize{
+\item A Eclidean distance matrix
+}}
+
+\item{c}{\itemize{
+\item A scale factor
+}}
 }
 \value{
 RMG.mat
@@ -17,5 +23,5 @@ Converts a Euclidean Distance (dissimilarity) matrix into a
 similarity matrix for spectral analysis.
 }
 \examples{
-RADIAL_KERNEL(dist(iris[,1:4]))
+RADIAL_KERNEL(as.matrix(DIST(iris[,1:4])))
 }

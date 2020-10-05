@@ -24,3 +24,6 @@ the pairwise Euclidean distance between the N
 elements of data.mat. In this case, it will often
 be used as a dissimilarity matrix.
 }
+\examples{
+DIST(as.matrix(iris[,1:4]))
+}

@@ -3,7 +3,7 @@
 #' Converts a Euclidean Distance (dissimilarity) matrix into a
 #' similarity matrix for spectral analysis.
 #'
-#' @param euclidian_distance.mat
+#' @param euclidian_distance.mat - A Eclidean distance matrix
 #' @param c - A scale factor
 #'
 #' @return RMG.mat

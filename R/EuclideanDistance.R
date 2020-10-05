@@ -1,4 +1,3 @@
-##############################
 #' A Euclidean Distance Finder
 #'
 #' This algorithm uses the Gram matrix to calculate
