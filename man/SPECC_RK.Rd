@@ -25,3 +25,8 @@ kmeans output - TODO update this
 \description{
 Spectral Clustering using a Radial Kernel
 }
+\examples{
+iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))), 3, 70)
+
+pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
+}
