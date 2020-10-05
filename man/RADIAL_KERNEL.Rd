@@ -23,5 +23,6 @@ Converts a Euclidean Distance (dissimilarity) matrix into a
 similarity matrix for spectral analysis.
 }
 \examples{
-RADIAL_KERNEL(as.matrix(DIST(iris[,1:4])))
+similarity.mat <- RADIAL_KERNEL(as.matrix(DIST(iris[,1:4])))
+similarity.mat[1:10,1:10]
 }

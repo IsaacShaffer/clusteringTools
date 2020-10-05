@@ -25,5 +25,6 @@ elements of data.mat. In this case, it will often
 be used as a dissimilarity matrix.
 }
 \examples{
-DIST(as.matrix(iris[,1:4]))
+distance.mat <- DIST(as.matrix(iris[,1:4]))
+distance.mat[1:10,1:10]
 }

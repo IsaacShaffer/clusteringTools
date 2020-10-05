@@ -10,7 +10,8 @@
 #' @export
 #'
 #' @examples
-#' RADIAL_KERNEL(as.matrix(DIST(iris[,1:4])))
+#' similarity.mat <- RADIAL_KERNEL(as.matrix(DIST(iris[,1:4])))
+#' similarity.mat[1:10,1:10]
 RADIAL_KERNEL <- function(euclidian_distance.mat, c = 1) {
 
   stopifnot(dim(euclidian_distance.mat)[1]==dim(euclidian_distance.mat)[2])

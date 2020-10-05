@@ -12,7 +12,8 @@
 #' @export
 #'
 #' @examples
-#' DIST(as.matrix(iris[,1:4]))
+#' distance.mat <- DIST(as.matrix(iris[,1:4]))
+#' distance.mat[1:10,1:10]
 DIST <- function(data.mat, digits = 15) {
   ### Calculate Euclidean distance using the Gram matrix ###
   Gram.mat <- as.matrix(data.mat) %*% t(as.matrix(data.mat))
