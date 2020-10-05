@@ -1,12 +1,12 @@
-# clustering-tools
+# clusterTools
 
 Some simple tools for clustering
 
-## Installation
+### Installation
 
-devtools::install_github("tdhock/LOPART")
+devtools::install_github("IsaacShaffer/clusterTools")
 
-## Usage
+### Usage
 
 For spectral clustering with radial kernel, the main function is:
 
@@ -45,7 +45,7 @@ Available components:
 
 They can be used in conjunction with other clustering assessment tools like `pdfCluster::adj.rand.index`:
 
-```{r}
+```
 > pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
 
 [1] 0.8176016
