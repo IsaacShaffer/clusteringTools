@@ -1,5 +1,5 @@
 Package: clusterTools
-Title: This package is a collection of simple clustering tools.
+Title: A collection of simple clustering tools
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Isaac",
@@ -13,3 +13,4 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: data.table

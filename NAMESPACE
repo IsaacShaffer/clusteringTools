@@ -2,3 +2,4 @@
 
 export(DIST)
 export(RADIAL_KERNEL)
+export(SPECC_RK)

@@ -8,12 +8,8 @@
 #'
 #' @return kmeans output - TODO update this
 #' @export
-#'
-#' @examples
-#' iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))), 3)
-#' mclust::adjustedRandIndex(iris_demo$cluster, iris[,5])
 SPECC_RK <- function(data.mat, centers, scale = 1) {
-  require("data.table")
+  requireNamespace("data.table")
   N <- nrow(data.mat)
   distance.mat <- DIST(data.mat)
   #### Convert Euclidian distances to similarities ########
@@ -35,3 +31,8 @@ SPECC_RK <- function(data.mat, centers, scale = 1) {
   kmeans_results <- stats::kmeans(cluster.mat, centers = centers)
   return(kmeans_results)
 }
+#'
+#' @examples
+#' iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))), 3)
+#' # pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
+
