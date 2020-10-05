@@ -12,7 +12,7 @@
 #' @examples
 #' iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))),
 #'                       3, 70)
-#'
+#' library(pdfCluster)
 #' pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
 
 SPECC_RK <- function(data.mat, centers, scale = 1) {

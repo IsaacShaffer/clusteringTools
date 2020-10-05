@@ -15,5 +15,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     data.table
+    pdfCluster
 Suggests: 
     testthat

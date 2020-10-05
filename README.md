@@ -46,7 +46,8 @@ Available components:
 They can be used in conjunction with other clustering assessment tools like `pdfCluster::adj.rand.index`:
 
 ```
-> pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
+require(pdfCluster)
+pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
 
 [1] 0.8176016
 ```
