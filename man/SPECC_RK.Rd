@@ -28,6 +28,6 @@ Spectral Clustering using a Radial Kernel
 \examples{
 iris_demo <- SPECC_RK(RADIAL_KERNEL(DIST(as.matrix(iris[,1:4]))),
                       3, 70)
-
+library(pdfCluster)
 pdfCluster::adj.rand.index(iris_demo$cluster, iris[,5])
 }
